@@ -2,6 +2,8 @@ import withSearch from "./components/hoc/withSearch";
 import ProductList from "./components/hoc/productList";
 import TodoList from "./components/hoc/todoList";
 import TodoContainer from "./components/presentation-container/todoContainer";
+import TodosView from "./components/provider/todosView";
+import Store from "./components/provider/store";
 import "./App.css";
 
 const products = [
@@ -50,6 +52,11 @@ function App() {
       <hr />
       <h2>Presentation-container</h2>
       <TodoContainer />
+      <hr />
+      <h2>Provider</h2>
+      <Store>
+        <TodosView />
+      </Store>
     </div>
   );
 }
