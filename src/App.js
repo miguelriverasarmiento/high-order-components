@@ -4,6 +4,7 @@ import TodoList from "./components/hoc/todoList";
 import TodoContainer from "./components/presentation-container/todoContainer";
 import TodosView from "./components/provider/todosView";
 import Store from "./components/provider/store";
+import Menu from "./components/compound/menu";
 import "./App.css";
 
 const products = [
@@ -57,6 +58,13 @@ function App() {
       <Store>
         <TodosView />
       </Store>
+      <hr />
+      <h2>Compound</h2>
+      <Menu>
+        <Menu.Item title="Elemento 1" />
+        <Menu.Item title="Elemento 2" />
+        <Menu.Item title="Elemento 3" />
+      </Menu>
     </div>
   );
 }
